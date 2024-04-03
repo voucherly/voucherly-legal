@@ -1,0 +1,71 @@
+---
+sidebar_position: 5
+---
+
+# Service Level Agreement
+
+Versione 1.0 del 24/11/2023
+
+Service Level Agreement
+================================================================================================
+
+This Service Level Agreement ("SLA") is a policy governing the use of Voucherly and applies separately to each Customer using Voucherly. 
+Capitalized terms used herein but not defined herein shall have the meanings set forth in the Agreement.
+
+
+## Service Level
+
+    ### Service Commitment
+        Voucherly will use commercially reasonable efforts to make Voucherly 's services available with a Monthly Uptime Percentage, during any monthly Subscription Period, of  (a) at least 99.98% if the Enterprise plan applies, or (b) at least 99% if the Business plan applies (the "Service Commitment").
+        In the event Voucherly does not meet the Service Commitment, you will be eligible to receive a Service Credit as described below.
+
+    ### Service Commitment
+        Service Credits are calculated as a percentage of the total charges paid by you for Voucherly for the monthly Subscription Period in which the Monthly Uptime Percentage fell within the ranges set forth in the table below:    
+
+        | | Monthly Uptime Percentage | Service Credit Percentage |
+        |---|---|---|
+        | **Enterprise** | Less than 99.98% but equal to or greater than 95.0% | 10% |
+        | **Enterprise** | Less than 95% but equal to or greater than 90.0% | 25% |
+        | **Enterprise** | Less than 90% | 50% |
+        | **Business** | Less than 99% but equal to or greater than 95.0% | 10% |
+        | **Business** | Less than 95% but equal to or greater than 90.0% | 25% |
+        | **Business** | Less than 90% | 50% |
+
+        We will apply any Service Credits only against future Voucherly payments otherwise due from you. 
+        At our discretion, we may issue the Service Credit to the credit card you used to pay for the Subscription Period in which the Service Commitment was not met. 
+        Service Credits will not entitle you to any refund or other payment from Voucherly. 
+        A Service Credit will be applicable and issued only if the credit amount for the applicable monthly Subscription Period is greater than one euro (€1 EUR). 
+        Service Credits may not be transferred or applied to any other account. 
+        Unless otherwise provided in the Agreement, your sole and exclusive remedy for any unavailability, non-performance, or other failure by us to provide Voucherly is the receipt of a Service Credit (if eligible) in accordance with the terms of this SLA.
+
+    ### Credit Request and Payment Procedures
+        To receive a Service Credit, you must submit a claim by sending an email to support@vouchery.it. To be eligible, the credit request must be received by us by the end of the second Subscription Period after which the incident occurred and must include:
+        *   The words “SLA Credit Request” in the subject line;
+        *   The Subscription Period and Merchant with respect to which you are claiming Service Credits together with the dates, times, and Availabilities for each 5-minute interval with less than 100% Availability throughout the Subscription Period;
+        *   Your Request logs that document the Errors for your claimed outage (any confidential or sensitive information in these logs should be removed or replaced with asterisks).
+
+        If the Monthly Uptime Percentage of such credit request is confirmed by us and is less than the Service Commitment, then we will issue the Service Credits to you within one Subscription Period following the month in which the credit request occurred. 
+        Your failure to provide the credit request and other information as required above will disqualify you from receiving Service Credits.
+
+    ### Voucherly SLA Exclusions
+        The Service Commitment does not apply to any unavailability, suspension or termination of Voucherly, or any other Voucherly performance issues: 
+        (i) caused by factors outside of our reasonable control, including any force majeure event or Internet access or related problems beyond the demarcation point of Voucherly;
+        (ii) that result from any actions or inactions of you; 
+        (iii) that result from your equipment, software or other technology; or 
+        (iv) that result from Payment Gateways errors; or 
+        (v) arising from our suspension or termination of your right to use Voucherly in accordance with the Terms of Service (collectively, the "Voucherly SLA Exclusions"). 
+        If availability is impacted by factors other than those used in our calculation of the Monthly Uptime Percentage, then we may issue a Service Credit considering such factors at our discretion.
+
+
+## Definitions
+    **Availability** is calculated for each 5-minute interval as the percentage of Requests processed by Voucherly that do not fail with Errors. 
+    If you did not make any Requests in a given 5-minute interval, that interval is assumed to be 100% available.
+
+    An **Error** is any Request that returns a 500 or 503 status code.
+
+    **Monthly Uptime Percentage** is calculated as the average of the Availability for all 5-minute intervals in a monthly Subscription Period. 
+    Monthly Uptime Percentage measurements exclude downtime resulting directly or indirectly from any Voucherly SLA Exclusions.
+
+    A **Request** is an invocation of an endpoint of any API hosted on Voucherly.
+
+    A **Service Credit** is an euro credit, calculated as set forth above, that we may credit back to an eligible account.
