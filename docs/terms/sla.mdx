@@ -13,13 +13,24 @@ This Service Level Agreement ("SLA") is a policy governing the use of Voucherly 
 Capitalized terms used herein but not defined herein shall have the meanings set forth in the Agreement.
 
 
-## Service Level
+## Uptime
 
     ### Service Commitment
         Voucherly will use commercially reasonable efforts to make Voucherly 's services available with a Monthly Uptime Percentage, during any monthly Subscription Period, of  (a) at least 99.98% if the Enterprise plan applies, or (b) at least 99% if the Business plan applies (the "Service Commitment").
         In the event Voucherly does not meet the Service Commitment, you will be eligible to receive a Service Credit as described below.
 
-    ### Service Commitment
+    ### Scheduling downtime
+
+        **Maintenance Window**: 01:30 to 04:30 (Rome UTC +1, UTC +2 when DST is in force)
+
+        **Maintenance Notification Time**: At least 1 day before the Scheduled Downtime
+
+        If Voucherly does not notify Merchant about Scheduled Downtime before the Maintenance Notification Time, that period of unavailability will not qualify as Scheduled Downtime. 
+        Voucherly may notify Customer about Scheduled Downtime by electronic means, including by email, on the Cloud Service, or on Provider’s website.
+
+## Remedies
+
+    ### Service Credits
         Service Credits are calculated as a percentage of the total charges paid by you for Voucherly for the monthly Subscription Period in which the Monthly Uptime Percentage fell within the ranges set forth in the table below:    
 
         | | Monthly Uptime Percentage | Service Credit Percentage |
@@ -47,6 +58,8 @@ Capitalized terms used herein but not defined herein shall have the meanings set
         If the Monthly Uptime Percentage of such credit request is confirmed by us and is less than the Service Commitment, then we will issue the Service Credits to you within one Subscription Period following the month in which the credit request occurred. 
         Your failure to provide the credit request and other information as required above will disqualify you from receiving Service Credits.
 
+        If Provider can verify Cloud Service unavailability in its internal monitoring systems and the disruption does not qualify as Excluded Minutes or Scheduled Downtime
+
     ### Voucherly SLA Exclusions
         The Service Commitment does not apply to any unavailability, suspension or termination of Voucherly, or any other Voucherly performance issues: 
         (i) caused by factors outside of our reasonable control, including any force majeure event or Internet access or related problems beyond the demarcation point of Voucherly;
@@ -64,8 +77,10 @@ Capitalized terms used herein but not defined herein shall have the meanings set
     An **Error** is any Request that returns a 500 or 503 status code.
 
     **Monthly Uptime Percentage** is calculated as the average of the Availability for all 5-minute intervals in a monthly Subscription Period. 
-    Monthly Uptime Percentage measurements exclude downtime resulting directly or indirectly from any Voucherly SLA Exclusions.
+    Monthly Uptime Percentage measurements exclude Scheduled Downtime and downtime resulting directly or indirectly from any Voucherly SLA Exclusions.
 
     A **Request** is an invocation of an endpoint of any API hosted on Voucherly.
 
     A **Service Credit** is an euro credit, calculated as set forth above, that we may credit back to an eligible account.
+    
+    **Scheduled Downtime** means time periods that occur during the Maintenance Window where Voucherly is not available to Customer.
