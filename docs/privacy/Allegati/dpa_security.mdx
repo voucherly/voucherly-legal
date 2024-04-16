@@ -1,0 +1,48 @@
+---
+sidebar_label: Allegato II
+---
+
+# Data Processing Agreement
+
+Versione 1.0 del 24/11/2023
+
+Descrizione delle misure tecniche e organizzative adottate
+================================================================================================
+
+[Nomina a Responsabile del trattamento](/privacy/dpa)
+
+Il Responsabile e i Sub-Responsabili da lui incaricati si impegnano a garantire un livello di sicurezza non inferiore a quello previsto dalle misure tecniche e organizzative di seguito descritte.
+
+
+## Misure tecniche
+
+### Crittografia
+Viene applicata in trasmissione tramite protocollo https.
+
+### Riservatezza
+    *   Il Titolare può accedere ai dati personali tramite credenziali di accesso;
+    *   gli Incaricati del Responsabile con il compito di gestire il Servizio possono accedere ai dati del Titolare solo tramite account personali;
+    *   gli sviluppatori software del Servizio, autorizzati dal Responsabile, possono accedere direttamente ai dati personali ospitati negli archivi ma ciò accade solo per motivi diagnostici in caso di problemi tecnici, inoltre, i loro accessi sono tracciati nei log di sistema;
+    *   le macchine che eseguono il Servizio sono ospitate in centri dati protetti fisicamente. I tecnici addetti alla messa in funzione e alla manutenzione del Servizio possono operare solo in remoto.
+
+### Integrità
+    *   Vengono effettuati backup giornalieri dell’intera macchina virtuale che esegue il Servizio in un server localizzato geograficamente.
+
+### Resilienza
+    *   Per adeguare l’infrastruttura tecnologica sottostante il Servizio ai carichi di lavoro variabili viene applicato all’occorrenza uno scaling verticale delle macchine impiegate.
+
+### Continuità operativa
+    *   Il centro dati nel quale è ospitata l’infrastruttura che eroga il Servizio garantisce uno SLA del 99,999%.
+
+
+## Misure organizzative
+
+### Sicurezza
+    *   Viene applicata una politica di cambio delle password ogni 3 mesi;
+    *   Tutte le attività di sviluppo e test vengono effettuate in un ambiente di prova che utilizza dati fittizi non di natura personale.
+
+### Cancellazione dei dati
+    *   I dati personali trattati vengono anonimizzati con un processo automatico al termine del rapporto con il Titolare.
+
+### Sviluppo e manutenzione del codice sorgente
+    *   Ogni rilascio del codice è sottoposto ad una pipeline di distribuzione che verifica eventuali errori tramite l’esecuzione di una serie di test automatizzati.
