@@ -55,7 +55,7 @@ const config: Config = {
     navbar: {
       logo: {
         alt: 'Voucherly Logo',
-        src: 'https://ucarecdn.com/a5e716fc-abcb-4ab2-960a-33a6a1b5446c/-/preview/1000x250/',
+        src: 'https://ucarecdn.com/a5e716fc-abcb-4ab2-960a-33a6a1b5446c/-/preview/200x50/',
       },
       items: [
         {
