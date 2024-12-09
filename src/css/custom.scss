@@ -38,3 +38,7 @@
 .hidden {
   display: none !important;
 }
+
+table > thead:has(> tr > th:empty):not(:has(> tr > th:not(:empty))) {
+  display: none;
+}
