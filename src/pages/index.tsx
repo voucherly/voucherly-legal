@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/category/terms-of-service');
+    history.push('/terms');
   }, [history]);
 
   return null; // No need to render anything since the redirection is immediate

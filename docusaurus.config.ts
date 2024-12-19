@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Voucherly',
+  titleDelimiter: '—',
   tagline: 'Il modo migliore per accettare i buoni pasto',
   favicon: 'https://ucarecdn.com/5c304dd8-db4f-471e-a930-04bc0ed961d3/-/preview/100x100/',
 
