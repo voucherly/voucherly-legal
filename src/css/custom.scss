@@ -4,11 +4,15 @@
  * work well for content-centric websites.
  */
  @import url('https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
 
  /* You can override the default Infima variables here. */
  :root {
  
    --ifm-font-family-base: "Quicksand";
+   --ifm-heading-font-family: "Inter";
+   --ifm-heading-line-height: 1;
+ 
  
    --ifm-color-primary: #5c59f2;
    --ifm-color-primary-dark: #3e3af0;
