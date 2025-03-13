@@ -9,3 +9,8 @@ to = '/terms'
 [[redirects]]
 from = '/category/privacy'
 to = '/privacy'
+
+
+[[redirects]]
+from = '/terms/vsa'
+to = '/terms/service'
