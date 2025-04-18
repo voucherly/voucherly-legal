@@ -10,7 +10,10 @@ to = '/terms'
 from = '/category/privacy'
 to = '/privacy'
 
-
 [[redirects]]
 from = '/terms/vsa'
 to = '/terms/service'
+
+[[redirects]]
+from = '/privacy/cookies-policy'
+to = '/privacy/cookie-policy'
