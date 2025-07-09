@@ -17,3 +17,7 @@ to = '/terms/service'
 [[redirects]]
 from = '/privacy/cookies-policy'
 to = '/privacy/cookie-policy'
+
+[[redirects]]
+from = '/examples/one-click-payment/'
+to = '/examples/pagamenti-ricorrenti'
