@@ -6,7 +6,7 @@ const config: Config = {
   title: 'Voucherly',
   titleDelimiter: '—',
   tagline: 'Il modo migliore per accettare i buoni pasto',
-  favicon: 'https://ucarecdn.com/5c304dd8-db4f-471e-a930-04bc0ed961d3/-/preview/100x100/',
+  favicon: 'img/voucherly-favicon.ico',
 
   url: 'https://legal.voucherly.it',
   baseUrl: '/',
@@ -48,13 +48,13 @@ const config: Config = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    image: 'https://ucarecdn.com/1a50448f-55d8-46ac-bab0-764dee2b9c4f/-/preview/100x100/',
+    image: 'img/voucherly-logo-square.png',
     navbar: {
       logo: {
         href: 'https://voucherly.it',
         alt: 'Voucherly Logo',
-        src: 'https://ucarecdn.com/a5e716fc-abcb-4ab2-960a-33a6a1b5446c/-/preview/200x50/',
-        srcDark: 'https://ucarecdn.com/cf4a09cb-1f6e-4385-97c8-46ae406fd671/-/preview/200x50/',
+        src: 'img/voucherly-logo.png',
+        srcDark: 'img/voucherly-logo-white.png',
       },
       items: [
         // {
