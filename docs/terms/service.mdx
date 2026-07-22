@@ -143,7 +143,7 @@ Sei tenuto a leggere e accettare tutti i termini e condizioni contenuti o espres
 
 ### 9.1 Voucherly Orchestrator Platform
 
-1. Voucherly Orchestrator Platform ("**Orchestrator**") è un Servizio che opera come livello di instradamento dei pagamenti tra il Check-out di Voucherly e i prestatori di servizi di pagamento ("PSP") e i gestori dei pagamenti abilitati sul tuo Account (ciascuno un "**Gateway di pagamento**" o "**Gateway**"). Per ciascuna operazione di pagamento, Orchestrator individua il Gateway verso cui indirizzare la transazione, può reindirizzare automaticamente il pagamento verso un Gateway alternativo qualora il Gateway inizialmente selezionato rifiuti l'operazione o risulti indisponibile ("**fallback**"), consente la tokenizzazione degli strumenti di pagamento e ti mette a disposizione una reportistica unificata delle transazioni instradate.
+1. Voucherly Orchestrator Platform ("**Orchestrator**") è un Servizio che opera come livello di instradamento dei pagamenti tra il Check-out di Voucherly e i prestatori di servizi di pagamento ("PSP") e i gestori dei pagamenti abilitati sul tuo Account (ciascuno un "**Gateway di pagamento**" o "**Gateway**"). Per ciascuna operazione di pagamento, Orchestrator individua il Gateway verso cui indirizzare la transazione, può reindirizzare automaticamente il pagamento verso un Gateway alternativo qualora il Gateway inizialmente selezionato rifiuti l'operazione o risulti indisponibile ("fallback"), consente la tokenizzazione degli strumenti di pagamento e ti mette a disposizione una reportistica unificata delle transazioni instradate.
 
 1. Riconosci e accetti che la selezione del Gateway e la logica di fallback sono eseguite in modo automatizzato e che Voucherly non garantisce che il ricorso al fallback determini il buon esito del pagamento. Coerentemente con la Sezione 3, Voucherly si riserva il diritto di aggiungere, modificare, sospendere o rimuovere in qualsiasi momento i Gateway disponibili tramite Orchestrator e la relativa logica di instradamento, senza che ciò comporti alcuna responsabilità nei tuoi confronti.
 
@@ -151,7 +151,43 @@ Sei tenuto a leggere e accettare tutti i termini e condizioni contenuti o espres
 
 1. L'utilizzo di Orchestrator comporta l'applicazione di una commissione di orchestrazione per transazione, secondo il piano tariffario applicabile e dovuta per ciascun tentativo di pagamento a prescindere dal numero di Gateway interrogati nel fallback. Tale commissione costituisce parte delle Commissioni ed è disciplinata, quanto a fatturazione, imposte e modalità di pagamento, dalla Sezione 5 (Pagamento di commissioni e imposte).
 
-### 9.2 Voucherly Shop
+### 9.2 Buoni pasto
+
+1. Il servizio Buoni pasto ("**Buoni pasto**") ti consente di accettare, tramite il Check-out di Voucherly, i buoni pasto emessi dai relativi emettitori (ciascuno un "**Emettitore**"; a titolo esemplificativo Edenred, Pluxee, Sodexo, Pellegrini, Day, Yes!Ticket). Per ciascuna operazione Voucherly instrada verso l'Emettitore, per tuo conto, le richieste di autorizzazione, cattura, annullo e rimborso e, a seconda dell'Emettitore, autentica il titolare del buono tramite SSO o ne verifica il codice/OTP e, ove richiesto, il codice fiscale; l'eventuale importo non coperto dai buoni pasto è regolato con gli altri metodi di pagamento abilitati.
+
+1. Coerentemente con la Sezione 3, Voucherly può aggiungere, modificare, sospendere o rimuovere in qualsiasi momento gli Emettitori disponibili.
+
+1. Riconosci e accetti che il rapporto per l'accettazione dei buoni pasto intercorre direttamente tra te e ciascun Emettitore: sei tenuto a stipulare e mantenere in essere la relativa convenzione, a ottenere le credenziali e gli identificativi rilasciati dall'Emettitore e a inserirli e mantenerli aggiornati e validi nella Dashboard. Voucherly non è parte della convenzione con l'Emettitore e non ne assume gli obblighi.
+
+1. Sei l'unico responsabile del rispetto delle regole di ciascun Emettitore e della normativa applicabile ai buoni pasto, ivi compresi l'utilizzo limitato ai soli beni ammissibili (prodotti alimentari e categorie consentite), il valore facciale e i tagli fissi, l'assenza di resto sull'eccedenza, il numero massimo di buoni utilizzabili e le condizioni di cumulabilità, nonché della corretta qualificazione dei beni come ammissibili al pagamento con buoni pasto.
+
+1. Il regolamento economico dei buoni pasto — ivi compresi l'accredito o il rimborso degli importi e le commissioni applicate dall'Emettitore — avviene direttamente tra te e l'Emettitore secondo i termini con esso concordati; Voucherly non incassa, non detiene e non accredita i fondi relativi ai buoni pasto, e tali commissioni sono distinte dalle Commissioni dovute a Voucherly. Ove un Emettitore non consenta il rimborso in via automatizzata, la relativa gestione nei confronti del titolare resta a tuo carico.
+
+1. L'utilizzo del servizio buoni pasto è soggetto alle Commissioni di cui alla Sezione 5 (Pagamento di commissioni e imposte).
+
+### 9.3 Scontrini elettronici
+
+1. Il servizio scontrini elettronici ("**Scontrini elettronici**") consente a Voucherly di emettere, per tuo conto e su ogni pagamento andato a buon fine per cui ne fai richiesta, il documento commerciale on line mediante la procedura ufficiale dell'Agenzia delle Entrate ("**AdE**"). A tal fine Voucherly si autentica sul portale Fisconline con le tue credenziali e trasmette il documento commerciale alla procedura AdE. Voucherly agisce quale mero trasmettitore tecnico e non è l'emittente del documento né assume la qualità di soggetto fiscale.
+
+1. Riconosci e accetti di essere il soggetto emittente del documento commerciale : il documento è emesso sotto la tua partita IVA e/o codice fiscale e sei l'unico responsabile della sua correttezza, completezza e veridicità, nonché degli adempimenti fiscali connessi.
+
+1. Sei tenuto a fornire e mantenere valide le credenziali Fisconline necessarie all'emissione (a titolo esemplificativo, codice fiscale/utenza, password e PIN) e, per società, associazioni ed enti, a conferire la relativa delega. Ci autorizzi a utilizzare tali credenziali per emettere i documenti commerciali per tuo conto e, per rispettare la policy dell'AdE, a modificarne periodicamente la password in via automatizzata. Per effetto di tale rotazione, le credenziali sono dedicate al servizio e non possono essere utilizzate in parallelo su altri sistemi (a titolo esemplificativo, registratori di cassa o software di terzi). Qualora le credenziali risultino non valide, Voucherly potrà sospendere o disattivare il servizio, dandotene comunicazione.
+
+1. Sei tenuto a indicare le aliquote IVA corrette per ciascuna riga di ogni richiesta di pagamento: in loro assenza o inesattezza il documento commerciale può essere rifiutato dall'AdE o emesso in modo errato, con tua esclusiva responsabilità.
+
+1. L'utilizzo del servizio scontrini elettronici è soggetto alle Commissioni di cui alla Sezione 5 (Pagamento di commissioni e imposte).
+
+### 9.4 Pagamento al tavolo
+
+1. Il Pagamento al tavolo ("**Pagamento al tavolo**") è un Servizio che consente ai tuoi clienti di saldare, dal proprio dispositivo, il conto del tavolo presso il tuo esercizio, in genere accedendo a un QR code associato al tavolo. Il conto, con i relativi importi, righe, sconti, coperti e aliquote IVA, è generato e mantenuto dal tuo sistema di cassa o gestionale (il tuo "**POS**"); Voucherly si limita a leggerlo e a riconciliarlo, a consentire al cliente di scegliere se pagare l'intero conto, un importo o singoli prodotti e a elaborare il pagamento tramite il Check-out di Voucherly (ivi inclusi i buoni pasto).
+
+1. Riconosci e accetti che Voucherly non fissa i prezzi, non vende i beni o i servizi somministrati al tavolo e non aggiunge alcun importo (a titolo meramente esemplificativo, mancia, coperto o costo di servizio) al conto. Resti l'unico responsabile della correttezza e completezza del conto, dei prezzi, del menu, degli sconti e delle aliquote IVA, dell'integrazione con il POS nonché dei relativi dati e connettività, e dell'effettiva somministrazione dei beni e servizi ordinati; eventuali disallineamenti tra il conto e il tuo POS sono di tua esclusiva responsabilità. Coerentemente con la Sezione 3, Voucherly può modificare, sospendere o rimuovere il Servizio, ovvero l'integrazione con un determinato POS, in qualsiasi momento.
+
+1. Qualora tu non disponga di un POS integrato, il Pagamento al tavolo può essere utilizzato acquisendo una fotografia del preconto, i cui dati vengono trascritti in via automatizzata e successivamente rivisti e confermati dal tuo personale prima di essere resi disponibili per il pagamento ("**PhotoPos**"). Riconosci e accetti che l'acquisizione, la revisione e la conferma del preconto competono a te e che sei l'unico responsabile dell'accuratezza dei dati così inseriti; la trascrizione automatizzata è fornita "così com'è", senza alcuna garanzia di correttezza o completezza.
+
+1. L'utilizzo del Pagamento al tavolo è soggetto alle Commissioni di cui alla Sezione 5 (Pagamento di commissioni e imposte).
+
+### 9.5 Voucherly Shop
 
 1. Pubblicherai sul tuo Negozio Voucherly informazioni di contatto per il pubblico valide e aggiornate <!--, un'informativa completa sui rimborsi e l'indicazione dettagliata delle tempistiche di evasione degli ordini. -->
 
@@ -163,7 +199,7 @@ Sei tenuto a leggere e accettare tutti i termini e condizioni contenuti o espres
 
 1. Utilizzerai il Check-out di Voucherly per qualsivoglia vendita associata al proprio negozio online. Il termine "Check-out di Voucherly" indica l'esperienza di check-out di Voucherly che consente ai Clienti di inserire i propri dettagli di pagamento successivamente all'inserimento di uno o più articoli nel carrello, ma anteriormente all'effettuazione di un ordine, ivi inclusi i check-out che avvengono tramite l'API per il Check-out di Voucherly.
 
-### 9.3 Servizi di terze parti e Partner
+### Servizi di terze parti e Partner
 
 1. Voucherly può di volta in volta raccomandare, fornirti l'accesso o abilitare software, prodotti, servizi o link a siti web di terze parti (congiuntamente, "Servizi di terze parti") affinché tu possa valutarli o utilizzarli. Tali Servizi di terze parti sono resi disponibili esclusivamente come riferimento; l'acquisto, l'accesso o l'utilizzo di tali Servizi di terze parti riguarda unicamente te e il fornitore dei servizi esterno ("Fornitore di terze parti"). Accetti di essere vincolato, oltre che dai presenti Termini e condizioni del servizio, anche dagli specifici termini e condizioni applicabili ai servizi acquistati o ottenuti dai Fornitori di terze parti.
 
@@ -183,7 +219,7 @@ Sei tenuto a leggere e accettare tutti i termini e condizioni contenuti o espres
 
 1. Accetti di manlevare e tenere indenne Voucherly e (ove applicabile) la nostra controllante, nonché le nostre imprese, controllate e consociate, i partner, funzionari, amministratori, agenti, dipendenti e fornitori di Voucherly, in relazione a qualsiasi rivendicazione o richiesta, comprese le spese legali sostenute in misura ragionevole, riconducibile al tuo utilizzo di un Servizio di terze parti o al tuo rapporto con un Fornitore terzo.
 
-### 9.4 Servizi Beta
+### Servizi Beta
 
 1. Occasionalmente Voucherly potrà, a sua esclusiva discrezione, invitarti a utilizzare in via sperimentale funzionalità in anteprima o in versione beta, ancora in fase di sviluppo e non disponibili per tutti i merchant ("**Servizi Beta**"). I Servizi Beta non costituiscono parte integrante dei Servizi e possono essere soggetti a termini e condizioni aggiuntivi, che ti saranno comunicati da Voucherly prima che tu utilizzi i Servizi Beta. Tali Servizi Beta e tutte le conversazioni e i materiali a essi associati saranno considerati Informazioni riservate di Voucherly e saranno soggetti alle disposizioni in materia di riservatezza del presente accordo. Fermo restando il carattere generale di quanto precede, accetti di non rilasciare dichiarazioni pubbliche o rendere nota altrimenti la tua partecipazione ai Servizi Beta senza il previo consenso scritto di Voucherly. Voucherly non rilascia alcuna dichiarazione o garanzia che i Servizi Beta funzioneranno correttamente. Voucherly si riserva la facoltà di interrompere i Servizi Beta in qualsiasi momento a sua esclusiva discrezione. Voucherly non assumerà alcuna responsabilità per eventuali danni derivanti da o connessi a un Servizio Beta. I Servizi Beta potrebbero non funzionare allo stesso modo della versione definitiva. Voucherly sarà libera di modificare o non lanciare la versione definitiva o commerciale di un Servizio Beta, a sua esclusiva discrezione.
 
