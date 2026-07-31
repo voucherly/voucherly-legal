@@ -14,7 +14,12 @@ const config: Config = {
   projectName: 'voucherly-legal',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
 
   trailingSlash: true,
 
