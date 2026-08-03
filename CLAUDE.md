@@ -34,5 +34,6 @@ Non ci sono test. Package manager: **yarn**; `yarn.lock` è in `.gitignore`.
 
 ## Git e deploy
 
-- Branch dedicato + PR su `github.com/voucherly/voucherly-legal` per modifiche corpose; fix minori direttamente su `main`.
-- **Netlify pubblica automaticamente su `legal.voucherly.it` a ogni push su `main`**: ogni push a main è immediatamente pubblico. Le istruzioni di deploy GitHub Pages nel README sono il template Docusaurus di default e non si applicano.
+- **`main` è protetto: nessun push diretto.** Ogni modifica, per quanto minima, entra via branch dedicato + PR su `github.com/voucherly/voucherly-legal`.
+- Ogni PR verso `main` fa girare la GitHub Action `build` (`yarn build`): è un required status check, quindi un link rotto blocca il merge. In parallelo Netlify pubblica un deploy preview della PR. Versione di Node pinnata in `.nvmrc` (22), letta sia dalla CI sia da Netlify.
+- **È il merge su `main` a pubblicare su `legal.voucherly.it`**, non il push: da lì il contenuto è immediatamente pubblico. Le istruzioni di deploy GitHub Pages nel README sono il template Docusaurus di default e non si applicano.
