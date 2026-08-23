@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Data Processing Agreement
 
-Versione 1.0 del 24/11/2023
+Versione 1.1 del 24/08/2026
 
 Descrizione delle misure tecniche e organizzative adottate
 ================================================================================================
@@ -18,7 +18,8 @@ Il Responsabile e i Sub-Responsabili da lui incaricati si impegnano a garantire 
 ## Misure tecniche
 
 ### Crittografia
-Viene applicata in trasmissione tramite protocollo https.
+    *   Viene applicata in trasmissione tramite protocollo https;
+    *   gli accessi amministrativi ai sistemi che erogano il Servizio avvengono esclusivamente attraverso una rete privata virtuale con tunnel cifrato.
 
 ### Riservatezza
     *   Il Titolare può accedere ai dati personali tramite credenziali di accesso;
@@ -27,7 +28,12 @@ Viene applicata in trasmissione tramite protocollo https.
     *   le macchine che eseguono il Servizio sono ospitate in centri dati protetti fisicamente. I tecnici addetti alla messa in funzione e alla manutenzione del Servizio possono operare solo in remoto.
 
 ### Integrità
-    *   Vengono effettuati backup giornalieri dell’intera macchina virtuale che esegue il Servizio in un server localizzato geograficamente.
+    *   Vengono effettuati backup giornalieri dell’intera macchina virtuale che esegue il Servizio;
+    *   Vengono effettuati backup degli archivi con diversa temporizzazione:
+        *   backup completo settimanale;
+        *   backup differenziale giornaliero;
+        *   backup del giornale delle transazioni ogni quindici minuti;
+    *   i backup sono archiviati su un servizio di archiviazione a oggetti distinto dalla macchina che esegue il Servizio;
 
 ### Resilienza
     *   Per adeguare l’infrastruttura tecnologica sottostante il Servizio ai carichi di lavoro variabili viene applicato all’occorrenza uno scaling verticale delle macchine impiegate.
@@ -39,7 +45,7 @@ Viene applicata in trasmissione tramite protocollo https.
 ## Misure organizzative
 
 ### Sicurezza
-    *   Viene applicata una politica di cambio delle password ogni 3 mesi;
+    *   L’accesso ai sistemi che erogano il Servizio è nominale e viene revocato al termine del rapporto con l’Incaricato;
     *   Tutte le attività di sviluppo e test vengono effettuate in un ambiente di prova che utilizza dati fittizi non di natura personale.
 
 ### Cancellazione dei dati
