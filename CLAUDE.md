@@ -8,13 +8,13 @@ Sito Docusaurus 3 che pubblica i documenti legali di Voucherly su https://legal.
 
 ## Comandi
 
-- `yarn start` — dev server
-- `yarn build` — build statica in `build/` (è anche il comando usato da Netlify)
-- `yarn typecheck` — `tsc` sui file TS/TSX
-- `yarn lint` / `yarn lint:fix` — ESLint su TS/TSX e config JS
-- `yarn format` / `yarn format:check` — Prettier
+- `pnpm start` — dev server
+- `pnpm build` — build statica in `build/` (è anche il comando usato da Netlify)
+- `pnpm typecheck` — `tsc` sui file TS/TSX
+- `pnpm lint` / `pnpm lint:fix` — ESLint su TS/TSX e config JS
+- `pnpm format` / `pnpm format:check` — Prettier
 
-Non ci sono test. Package manager: **yarn**; `yarn.lock` è in `.gitignore`.
+Non ci sono test. Package manager: **pnpm**, alla versione fissata da `packageManager` in `package.json`; non usare npm né yarn, i cui lockfile sono in `.gitignore`. `pnpm-lock.yaml` è tracciato: CI installa con `--frozen-lockfile`. Una dipendenza nuova con uno script di installazione (nativa, come `sharp`) va autorizzata in `onlyBuiltDependencies` di `pnpm-workspace.yaml`, altrimenti pnpm non esegue lo script.
 
 **Prettier ignora `docs/`** (vedi `.prettierignore`): riformattare i testi legali produrrebbe diff enormi su file con valore contrattuale. Non forzare Prettier su quella cartella.
 
