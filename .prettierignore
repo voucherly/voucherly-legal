@@ -2,7 +2,7 @@ build/
 .docusaurus/
 node_modules/
 static/
-yarn.lock
+pnpm-lock.yaml
 
 # I documenti legali non vanno riformattati automaticamente: il rewrap del testo
 # e delle tabelle produrrebbe diff enormi su file con valore contrattuale.

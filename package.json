@@ -2,6 +2,7 @@
   "name": "voucherly-legal",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
